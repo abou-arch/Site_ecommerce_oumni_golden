@@ -48,6 +48,9 @@ Légende : ✅ fait · 🟡 en cours · ⚪ pas démarré · 🔴 bloqué
 | 2026-10-30 | La démo suit désormais le template Framer AestheticMatch section par section (structure, proportions, composants), avec les polices et couleurs de la marque. Les éléments du template sans équivalent vérifié (avis, notes, étoiles, avant/après, prix, newsletter) sont remplacés par des contenus honnêtes. Correspondance détaillée dans `demo/README.md`. |
 | 2026-10-30 | Sur mobile, le hero ne montre que « Découvrir la sélection » : « Parler à Oumouna » reste dans la barre fixe en bas d’écran. |
 | 2026-10-30 | Hero allégé après retour d’Abou (section jugée dérangeante) : plus d’étiquettes ni de carte « 5 univers », seule la carte produit reste à droite. |
+| 2026-10-30 | Hero mobile en cadrage portrait 9:16; le cadrage panoramique reste utilisé sur ordinateur. |
+| 2026-10-30 | Prompt de passation révisé pour Claude Code : modifier la démo existante et utiliser le fichier portrait 9:16 sur téléphone, avec le hero horizontal sur ordinateur. |
+| 2026-10-30 | Packshots officiels utilisés seulement quand l’emballage correspond exactement à la photo fournie : Vital+ (autre produit) et Mixa en emballage français écartés. |
 
 ---
 
@@ -81,7 +84,8 @@ Légende : ✅ fait · 🟡 en cours · ⚪ pas démarré · 🔴 bloqué
 - [ ] Ses 2 catégories qui se vendent le mieux
 - [ ] Statut juridique : RC et NINEA
 
-- [ ] Une photo propre de la crème corps Balea karité & argan (l’actuelle garde un damier gris autour du pot)
+- [x] Une photo propre de la crème corps Balea karité & argan : remplacée par le packshot officiel dm.de
+- [ ] Confirmer que les produits livrés ont bien l’emballage des packshots officiels (ex. déocrème Sensitive, dont l’emballage officiel est plus récent)
 
 **D'Abou**
 - [x] Choisir la suite de la démo : intégration des vraies photos (option B, via le kit)
@@ -127,3 +131,7 @@ Légende : ✅ fait · 🟡 en cours · ⚪ pas démarré · 🔴 bloqué
 - Rendu vérifié sur ordinateur (1440 px) et mobile (375 px), sans erreur console.
 - Hero corrigé : la capsule dorée « à sa façon. » ne déborde plus sur la première ligne du titre ; étiquettes et carte statistique retirées ; carte produit masquée sur tablette pour ne plus couvrir les boutons.
 - Menu replié derrière le bouton menu sous 960 px (le bouton « Commander » reste visible) : les liens ne passent plus sur deux lignes sur tablette.
+- Démo publiée sur `main` (PR #2) et servie par GitHub Pages.
+- Déclinaison verticale du hero recadrée en 9:16 exact (936 × 1664 px) et branchée sur l’accueil mobile via `<picture>` (jusqu’à 760 px); cadrage horizontal conservé sur ordinateur.
+- Packshots officiels Balea téléchargés et reliés aux cartes d’accueil, au collage, au hero et aux variantes de la fiche crème quand ils correspondent; photos fournies conservées pour les autres.
+- Prompt du kit de passation mis à jour pour Claude Code, avec une instruction explicite de vérifier et brancher le hero mobile portrait 9:16.

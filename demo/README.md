@@ -33,7 +33,7 @@ La démo suit section par section le template Framer **AestheticMatch** (https:/
 
 La fiche produit reprend les mêmes composants (barre flottante, cartes produit, grand appel à l’action, pied de page).
 
-Le nouveau visuel du hero est `images/hero-aestheticmatch.png`. Il reprend le cadrage large avec espace de texte à gauche; `images/hero.jpg` est conservé comme ancienne version.
+Le hero a deux cadrages, choisis par un élément `<picture>` dans `index.html` : `images/hero-aestheticmatch.png` (horizontal, espace de texte à gauche) sur ordinateur et tablette, `images/hero-aestheticmatch-portrait-9x16.jpg` (936 × 1664 px) jusqu’à 760 px de large, la largeur où la page passe en mise en page mobile. Sur téléphone, le portrait remplit le hero sans déformation (`object-fit: cover`, visage gardé dans le cadre) et le texte se pose sur le feuillage sombre du bas. `images/hero.jpg` est conservé comme ancienne version.
 
 Le numéro WhatsApp n’est volontairement pas configuré : une fenêtre l’indique à la place d’ouvrir un lien qui utiliserait un numéro non confirmé. Après validation, renseigner `SHOP_WHATSAPP_NUMBER` dans `site.js`, au format international sans `+`.
 
@@ -79,7 +79,24 @@ Zoom lent du hero (1,03 → 1 sur 10 s), apparition du titre et de la carte prod
 | peluche-ours.jpg, peluche-rose-coeur.jpg | 4.11.45 PM (5), 4.11.46 PM | Cadeaux |
 | eponges-douche.jpg | 4.11.45 PM (6) | Sélection |
 
-La photo `balea-creme-corps-karite-argan.jpg` garde un léger damier gris autour du pot (fausse transparence de l'image d'origine), visible sur fond ivoire. Un nettoyage automatique effaçait aussi le bord blanc du pot : il a été écarté pour ne pas retoucher l'emballage. À remplacer par une photo propre.
+La photo d’origine `balea-creme-corps-karite-argan.jpg` garde un léger damier gris autour du pot (fausse transparence) : la démo affiche désormais le packshot officiel du même pot, l’original reste dans `images/`.
+
+### Packshots officiels
+Les fichiers suffixés `-official` sont des images officielles, reliées aux cartes de l’accueil, au collage, à la carte produit du hero et aux variantes de la fiche crème pour les mains. Ils ne sont utilisés que lorsque l’emballage correspond à celui des photos fournies ; les photos d’origine restent dans `images/`.
+
+| Fichier | Produit | Source |
+|---|---|---|
+| `creme-mains-aloe-vera-official.jpg` | Balea Aloe Vera | [dm.de](https://www.dm.de/p/d/2976895/balea-handcreme-aloe-vera) |
+| `creme-mains-q10-official.jpg` | Balea Q10 | [dm.de](https://www.dm.de/p/d/1709176/balea-handcreme-q10-mit-aprikosenoel-und-lsf15) |
+| `creme-mains-glamorous-moment-official.jpg` | Balea Glamorous Moment | [dm.de](https://www.dm.de/p/d/2976914/balea-handcreme-glamorous-moment) |
+| `creme-mains-penetration-rapide-official.jpg` | Balea Pénétration rapide | [dm.de](https://www.dm.de/p/d/1623569/balea-handcreme-schnell-einziehend-trockene-haut) |
+| `creme-mains-huile-official.jpg` | Balea Crème-huile | [dm.de](https://www.dm.de/p/d/1701701/balea-handlotion-creme-oel) |
+| `creme-mains-uree-official.jpg` | Balea Urée | [dm.de](https://www.dm.de/p/d/1578748/balea-handcreme-urea) |
+| `balea-creme-corps-karite-argan-official.jpg` | Balea karité & argan | [dm.de](https://www.dm.de/p/d/1364414/balea-bodycreme-sheabutter-und-arganoel) |
+| `balea-deo-creme-sensitive-official.jpg` | Balea Déocrème Sensitive | [dm.de](https://www.dm.de/p/d/3069641/balea-deocreme-sensitive) |
+| `balea-huile-demaquillante-official.jpg` | Balea huile démaquillante à l’argan | [dm.hr](https://www.dm.hr/p/d/1437541/balea-ulje-za-ciscenje-lica-s-arganovim-uljem) |
+
+La version camomille n’a pas de packshot officiel dans le kit et garde la photo fournie. Deux images officielles téléchargées pour le kit ne sont pas utilisées : celle de la crème de jour montre la **Vital+** « straffende Tagescreme », un autre produit que la Vital anti-rides photographiée, et celle de Mixa montre l’emballage français « Cica Réparation 10-en-1 » alors que la photo fournie est l’emballage allemand « 10-in-1 Cica Repair+ ». Ces deux cartes gardent la photo d’origine.
 
 Préparées mais pas encore placées : jessa-*.jpg (4.11.47 PM (1) et (2)), mivolis-*.jpg (bonbons 4.11.46 PM (2) à (4), Immun Fit 4.11.45 PM (2)). Ce sont des produits d'hygiène et des compléments : à présenter sans aucune allégation santé.
 

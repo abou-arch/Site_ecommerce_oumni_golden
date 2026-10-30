@@ -3,18 +3,18 @@
   const SHOP_WHATSAPP_NUMBER = "";
   const images = "images/";
   const products = [
-    {brand:"Balea",name:"Crème pour les mains",detail:"7 versions au choix",image:"creme-mains-aloe-vera.jpg",href:"produit.html",tag:"Soin des mains"},
-    {brand:"Balea",name:"Crème corps karité & argan",detail:"Pot de crème pour le corps",image:"balea-creme-corps-karite-argan.jpg",tag:"Soin du corps"},
+    {brand:"Balea",name:"Crème pour les mains",detail:"7 versions au choix",image:"creme-mains-aloe-vera-official.jpg",href:"produit.html",tag:"Soin des mains"},
+    {brand:"Balea",name:"Crème corps karité & argan",detail:"Pot de crème pour le corps",image:"balea-creme-corps-karite-argan-official.jpg",tag:"Soin du corps"},
     {brand:"Mixa",name:"Baume Cica Repair+",detail:"Format à confirmer",image:"mixa-cica-repair.jpg",tag:"Soin du corps"},
     {brand:"Balea",name:"Crème de jour Vital",detail:"Pot et sa boîte",image:"balea-vital-creme-jour.jpg",tag:"Soin du visage"},
-    {brand:"Balea",name:"Déodorant crème Sensitive",detail:"Pot de déodorant crème",image:"balea-deo-creme-sensitive.jpg",tag:"Hygiène"},
-    {brand:"Balea",name:"Huile démaquillante à l’argan",detail:"Flacon pompe",image:"balea-huile-demaquillante.jpg",tag:"Soin du visage"},
+    {brand:"Balea",name:"Déodorant crème Sensitive",detail:"Pot de déodorant crème",image:"balea-deo-creme-sensitive-official.jpg",tag:"Hygiène"},
+    {brand:"Balea",name:"Huile démaquillante à l’argan",detail:"Flacon pompe",image:"balea-huile-demaquillante-official.jpg",tag:"Soin du visage"},
     {brand:"",name:"Ourson en peluche",detail:"Taille à confirmer",image:"peluche-ours.jpg",tag:"Idée cadeau"},
     {brand:"",name:"Éponges de douche tressées",detail:"Trois coloris",image:"eponges-douche.jpg",tag:"Accessoire"}
   ];
   const related = [products[1],products[4],products[5],products[2],products[3]];
   const variantNames = ["Aloe Vera","Q10","Camomille","Glamorous Moment","Pénétration rapide","Crème-huile","Urée"];
-  const variantImages = ["creme-mains-aloe-vera.jpg","creme-mains-q10.jpg","creme-mains-camomille.jpg","creme-mains-glamorous-moment.jpg","creme-mains-penetration-rapide.jpg","creme-mains-huile.jpg","creme-mains-uree.jpg"];
+  const variantImages = ["creme-mains-aloe-vera-official.jpg","creme-mains-q10-official.jpg","creme-mains-camomille.jpg","creme-mains-glamorous-moment-official.jpg","creme-mains-penetration-rapide-official.jpg","creme-mains-huile-official.jpg","creme-mains-uree-official.jpg"];
   const motionOK = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // Same card anatomy as the template: framed packshot, name and maker, a meta line, then a full-width pill.
