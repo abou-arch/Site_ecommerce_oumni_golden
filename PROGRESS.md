@@ -126,3 +126,4 @@ Légende : ✅ fait · 🟡 en cours · ⚪ pas démarré · 🔴 bloqué
 - Fiche produit alignée sur les mêmes composants ; versions, quantité et fenêtre de contact vérifiées.
 - Rendu vérifié sur ordinateur (1440 px) et mobile (375 px), sans erreur console.
 - Hero corrigé : la capsule dorée « à sa façon. » ne déborde plus sur la première ligne du titre ; étiquettes et carte statistique retirées ; carte produit masquée sur tablette pour ne plus couvrir les boutons.
+- Menu replié derrière le bouton menu sous 960 px (le bouton « Commander » reste visible) : les liens ne passent plus sur deux lignes sur tablette.
