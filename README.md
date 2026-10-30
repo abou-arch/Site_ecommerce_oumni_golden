@@ -4,7 +4,7 @@ Site vitrine e-commerce en préparation pour Oumouna Rassoul, au Sénégal. La p
 
 ## Point de départ
 
-- **Démo ouvrable dans un navigateur :** accueil responsive et fiche produit interactive dans [`demo/`](demo/README.md) (`index.html` et `produit.html`).
+- **Démo ouvrable dans un navigateur :** accueil responsive et fiche produit interactive dans [`demo/`](demo/README.md) (`index.html` et `produit.html`), construites section par section sur le template Framer [AestheticMatch](https://aestheticmatch.framer.website/) aux couleurs de la marque (correspondance dans `demo/README.md`).
 - **Maquettes du canevas :** les trois exports `.dc.html` restent conservés comme références dans `demo/`.
 - **Suivi maître :** [`PROGRESS.md`](PROGRESS.md). C’est le document de référence pour les décisions, les validations manquantes et le journal.
 - **Kit de contexte :** [`handoff_claude_oumouna_golden/`](handoff_claude_oumouna_golden/README.md), avec le prompt, le brief visuel, l’inventaire photo et les mouvements proposés.

@@ -1,6 +1,6 @@
 # Oumouna Rassoul Golden — Suivi du projet
 
-> Dernière mise à jour : 2026-10-29 · Mis à jour à chaque session de travail (voir `CLAUDE.md`).
+> Dernière mise à jour : 2026-10-30 · Mis à jour à chaque session de travail (voir `CLAUDE.md`).
 
 **Cliente :** Oumouna Rassoul (vendeuse en dropshipping, Sénégal) · **Porteur :** Abou
 **Objectif actuel :** démo visuelle du site pour convaincre la cliente, puis vente des services d'automatisation.
@@ -20,7 +20,7 @@
 | 2 | Identité visuelle | 🟡 Direction posée | « Noir et or », Bodoni Moda + DM Sans, hero généré (à valider) ; logo pas encore fait |
 | 3 | Marketing | ⚪ Cadré | Canaux et indicateurs définis, rien de lancé |
 | 4 | Copywriting | 🟡 Partiel | Textes de la démo rédigés ; slogan à choisir (A/B/C) |
-| — | Démo du site | 🟡 Démo locale développée | Accueil responsive et fiche produit autonome dans `demo/index.html` et `demo/produit.html`; revue visuelle et validation cliente restent à faire |
+| — | Démo du site | 🟡 Démo locale alignée sur le template Framer | Accueil et fiche produit refaits section par section sur le template AestheticMatch (`demo/index.html`, `demo/produit.html`), vérifiés sur ordinateur et mobile ; validation cliente à faire |
 | 5 | Site e-commerce | ⚪ Pas démarré | Après validation de la démo |
 
 Légende : ✅ fait · 🟡 en cours · ⚪ pas démarré · 🔴 bloqué
@@ -45,6 +45,9 @@ Légende : ✅ fait · 🟡 en cours · ⚪ pas démarré · 🔴 bloqué
 | 2026-10-29 | Montants des coffrets cadeaux retirés de la démo (remplacés par [budget]) tant qu’Oumouna ne les a pas validés |
 | 2026-10-29 | Les exports HTML « Accueil — ordinateur » et « Fiche produit » reçus sont conservés comme références visuelles; leurs README les identifient comme maquettes, pas comme code de production. Le suivi `PROGRESS.md` reste la source de vérité. |
 | 2026-10-29 | Référence visuelle à suivre confirmée par Abou : le site AestheticMatch (rythme de page et composition), adaptée à la marque noir et or sans reprendre ses textes ni ses visuels. |
+| 2026-10-30 | La démo suit désormais le template Framer AestheticMatch section par section (structure, proportions, composants), avec les polices et couleurs de la marque. Les éléments du template sans équivalent vérifié (avis, notes, étoiles, avant/après, prix, newsletter) sont remplacés par des contenus honnêtes. Correspondance détaillée dans `demo/README.md`. |
+| 2026-10-30 | Sur mobile, le hero ne montre que « Découvrir la sélection » : « Parler à Oumouna » reste dans la barre fixe en bas d’écran. |
+| 2026-10-30 | Hero allégé après retour d’Abou (section jugée dérangeante) : plus d’étiquettes ni de carte « 5 univers », seule la carte produit reste à droite. |
 
 ---
 
@@ -77,6 +80,8 @@ Légende : ✅ fait · 🟡 en cours · ⚪ pas démarré · 🔴 bloqué
 - [ ] Choix du slogan (A/B/C)
 - [ ] Ses 2 catégories qui se vendent le mieux
 - [ ] Statut juridique : RC et NINEA
+
+- [ ] Une photo propre de la crème corps Balea karité & argan (l’actuelle garde un damier gris autour du pot)
 
 **D'Abou**
 - [x] Choisir la suite de la démo : intégration des vraies photos (option B, via le kit)
@@ -114,3 +119,11 @@ Légende : ✅ fait · 🟡 en cours · ⚪ pas démarré · 🔴 bloqué
 - Accueil et styles remaniés pour suivre la composition éditoriale d’AestheticMatch : hero immersif, produits en carrousel, alternance image/texte, univers, FAQ et CTA; contenu adapté aux informations disponibles pour Oumouna.
 - Nouveau visuel de hero généré et branché dans l’accueil : composition panoramique noir et or, sujet à droite et espace négatif à gauche; ancienne image conservée.
 - Hero régénéré après retour d’Abou : nouvelle scène botanique éditoriale, pose et arrière-plan distincts de l’ancien visuel; fichier du site remplacé, original préservé.
+
+### 2026-10-30
+- Template Framer AestheticMatch consulté en ligne et relevé section par section (structure, typographie, rayons, composants).
+- Démo refaite sur ce modèle : barre flottante, hero à cartes vitrées, carrousel de cartes produit, bloc éditorial à texte révélé, univers en cartes, bandeau photo à deux panneaux, commande en 3 étapes, FAQ en cartes, collage, grand appel à l’action, pied de page à logo géant.
+- Fiche produit alignée sur les mêmes composants ; versions, quantité et fenêtre de contact vérifiées.
+- Rendu vérifié sur ordinateur (1440 px) et mobile (375 px), sans erreur console.
+- Hero corrigé : la capsule dorée « à sa façon. » ne déborde plus sur la première ligne du titre ; étiquettes et carte statistique retirées ; carte produit masquée sur tablette pour ne plus couvrir les boutons.
+- Menu replié derrière le bouton menu sous 960 px (le bouton « Commander » reste visible) : les liens ne passent plus sur deux lignes sur tablette.
