@@ -20,7 +20,7 @@ La démo suit section par section le template Framer **AestheticMatch** (https:/
 | Section du template | Équivalent dans la démo | Adaptation |
 |---|---|---|
 | Barre de navigation flottante, bouton noir « Shop now » | Barre flottante, bouton « Commander » | Ouvre le contact WhatsApp |
-| Hero arrondi, titre serif avec un mot en capsule, carte statistique vitrée, carte vidéo | Même composition | Capsule dorée au lieu du jaune citron ; statistique « 5 univers » (fait vérifiable) ; carte produit au lieu de la vidéo |
+| Hero arrondi, titre serif avec un mot en capsule, carte statistique vitrée, carte vidéo | Titre à capsule et une seule carte produit | Capsule dorée au lieu du jaune citron ; carte produit au lieu de la vidéo ; étiquettes et carte statistique retirées pour laisser la photo respirer ; carte masquée sous 960 px |
 | « Most Popular » : carrousel de cartes produit | « Les essentiels du moment » | Prix remplacé par « Prix à confirmer », avis et étoiles retirés, bouton « Demander le prix » |
 | Grande photo avec texte révélé au défilement + titre et seconde photo | Bloc éditorial | Même révélation mot à mot |
 | Cartes de blog à texte superposé | « Nos univers » (5 catégories) | Montres & bijoux en carte monogramme tant qu’il n’y a pas de photo |
@@ -62,7 +62,7 @@ Les fichiers `.dc.html` restent les sources des 3 écrans du canevas (format Cla
 Version autonome (`index.html`, `produit.html`) : tous les boutons de contact passent par `data-order` et ouvrent une fenêtre qui indique que le numéro WhatsApp reste à confirmer. Mentions légales, conditions de vente et confidentialité sont affichées « à venir », sans lien. Les cartes « Beauté & soins » et « Bien-être » renvoient à la sélection ; « Mode & maroquinerie » et « Montres & bijoux » ouvrent le contact.
 
 ## Mouvements
-Zoom lent du hero (1,03 → 1 sur 10 s), apparition du titre et des cartes du hero (fondu + 16 px), quelques éclats dorés lents, révélation des sections au défilement, texte de la grande photo révélé mot à mot au défilement, collage qui dérive légèrement, étoiles du grand bouton qui tournent lentement, cartes levées de 4 px au survol, barre de navigation plus opaque au défilement. Tout est coupé si l'utilisateur a activé « réduire les animations » (`prefers-reduced-motion`). Le contenu reste visible sans animation.
+Zoom lent du hero (1,03 → 1 sur 10 s), apparition du titre et de la carte produit du hero (fondu + 16 px), quelques éclats dorés lents, révélation des sections au défilement, texte de la grande photo révélé mot à mot au défilement, collage qui dérive légèrement, étoiles du grand bouton qui tournent lentement, cartes levées de 4 px au survol, barre de navigation plus opaque au défilement. Tout est coupé si l'utilisateur a activé « réduire les animations » (`prefers-reduced-motion`). Le contenu reste visible sans animation.
 
 ## Photos : utilisées
 | Image | Source WhatsApp (27/10) | Usage |

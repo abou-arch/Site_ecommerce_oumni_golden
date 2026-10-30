@@ -35,8 +35,6 @@ h1, h2, h3 { font-weight: 400; }
 .pill-light:hover { background: var(--gold-light); }
 .pill-gold { background: var(--gold-light); color: var(--ink); }
 .pill-gold:hover { background: #f1dcaa; }
-.pill-glass { min-height: 44px; padding: 0 18px; border-color: rgba(255, 255, 255, .7); background: rgba(255, 255, 255, .1); color: #fff; font-size: 14px; backdrop-filter: blur(6px); }
-.pill-glass:hover { background: rgba(255, 255, 255, .22); }
 .pill-with-dot { padding-left: 6px; }
 .pill-dot { display: grid; width: 40px; height: 40px; place-items: center; border-radius: 50%; background: var(--ink); color: #fff; }
 .text-link { display: inline-flex; align-items: center; gap: 10px; padding: 0; border: 0; background: none; font-size: 15px; font-weight: 500; text-decoration: none; cursor: pointer; transition: color .2s; }
@@ -62,14 +60,10 @@ h1, h2, h3 { font-weight: 400; }
 .hero-shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(14, 10, 7, .8), rgba(14, 10, 7, .42) 40%, rgba(14, 10, 7, 0) 66%), linear-gradient(0deg, rgba(14, 10, 7, .5), transparent 42%); }
 .hero-copy { position: absolute; left: clamp(24px, 4.4vw, 64px); bottom: clamp(28px, 5vw, 64px); width: min(780px, 58%); }
 .hero h1 { margin: 0; font: 400 clamp(46px, 5.6vw, 86px)/1.02 var(--serif); letter-spacing: -.035em; text-wrap: balance; }
-.hero h1 mark { padding: 0 .2em .04em; border-radius: 999px; background: var(--gold-light); color: var(--ink); font-style: italic; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+/* Inline-block sizes the pill from its own line height; as a plain inline box it took Bodoni's tall content area and covered the line above. */
+.hero h1 mark { display: inline-block; margin-top: .12em; padding: .06em .26em .14em; border-radius: 999px; background: var(--gold-light); color: var(--ink); font-style: italic; line-height: 1; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
-.hero-side { position: absolute; right: clamp(20px, 2.8vw, 40px); bottom: clamp(20px, 2.8vw, 40px); display: flex; width: 340px; flex-direction: column; gap: 14px; }
-.hero-tags { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; }
-.glass { border: 1px solid rgba(255, 255, 255, .26); border-radius: var(--r-lg); background: rgba(28, 20, 13, .38); backdrop-filter: blur(18px) saturate(1.1); }
-.hero-stat { padding: 22px 26px 24px; }
-.hero-stat strong { display: block; font: 400 76px/.9 var(--serif); letter-spacing: -.04em; }
-.hero-stat p { margin: 10px 0 0; color: rgba(255, 255, 255, .88); font-size: 14px; line-height: 1.5; }
+.hero-side { position: absolute; right: clamp(20px, 2.8vw, 40px); bottom: clamp(20px, 2.8vw, 40px); width: 340px; }
 .hero-feature { display: grid; grid-template-columns: 84px 1fr auto; align-items: center; gap: 14px; padding: 9px 20px 9px 9px; border-radius: var(--r-lg); background: rgba(255, 255, 255, .95); color: var(--ink); text-decoration: none; transition: transform .25s var(--ease); }
 .hero-feature:hover { transform: translateY(-3px); }
 .hero-feature img { width: 84px; height: 84px; padding: 6px; border-radius: 22px; background: var(--sand); object-fit: contain; mix-blend-mode: multiply; }
@@ -292,7 +286,6 @@ h1, h2, h3 { font-weight: 400; }
   .main-nav a { font-size: 14px; }
   .hero-copy { width: 62%; }
   .hero-side { width: 290px; }
-  .hero-stat strong { font-size: 60px; }
   .editorial-photo { min-height: 600px; }
   .story-card { height: 400px; }
   .story-card:nth-child(n+4) { height: 330px; }
@@ -300,6 +293,11 @@ h1, h2, h3 { font-weight: 400; }
   .faq { gap: 40px; }
   .tile-3 { width: 280px; height: 190px; }
   .product-detail { gap: 36px; }
+}
+
+/* Below this width the product card would sit on top of the hero buttons. */
+@media (max-width: 960px) {
+  .hero-side { display: none; }
 }
 
 /* Mobile */
@@ -332,9 +330,6 @@ h1, h2, h3 { font-weight: 400; }
   .hero-actions .pill { width: 100%; }
   /* The sticky bar at the bottom of the screen already carries “Parler à Oumouna”. */
   .hero-actions .pill-with-dot { display: none; }
-  .hero-side { top: 14px; right: 14px; bottom: auto; left: 14px; width: auto; }
-  .hero-stat, .hero-feature { display: none; }
-  .pill-glass { min-height: 38px; padding-inline: 14px; font-size: 13px; }
 
   .section-head { flex-direction: column; align-items: flex-start; gap: 18px; margin-bottom: 26px; }
   .section-head-actions { width: 100%; justify-content: space-between; }

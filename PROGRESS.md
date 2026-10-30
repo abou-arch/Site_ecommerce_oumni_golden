@@ -47,6 +47,7 @@ Légende : ✅ fait · 🟡 en cours · ⚪ pas démarré · 🔴 bloqué
 | 2026-10-29 | Référence visuelle à suivre confirmée par Abou : le site AestheticMatch (rythme de page et composition), adaptée à la marque noir et or sans reprendre ses textes ni ses visuels. |
 | 2026-10-30 | La démo suit désormais le template Framer AestheticMatch section par section (structure, proportions, composants), avec les polices et couleurs de la marque. Les éléments du template sans équivalent vérifié (avis, notes, étoiles, avant/après, prix, newsletter) sont remplacés par des contenus honnêtes. Correspondance détaillée dans `demo/README.md`. |
 | 2026-10-30 | Sur mobile, le hero ne montre que « Découvrir la sélection » : « Parler à Oumouna » reste dans la barre fixe en bas d’écran. |
+| 2026-10-30 | Hero allégé après retour d’Abou (section jugée dérangeante) : plus d’étiquettes ni de carte « 5 univers », seule la carte produit reste à droite. |
 
 ---
 
@@ -124,3 +125,4 @@ Légende : ✅ fait · 🟡 en cours · ⚪ pas démarré · 🔴 bloqué
 - Démo refaite sur ce modèle : barre flottante, hero à cartes vitrées, carrousel de cartes produit, bloc éditorial à texte révélé, univers en cartes, bandeau photo à deux panneaux, commande en 3 étapes, FAQ en cartes, collage, grand appel à l’action, pied de page à logo géant.
 - Fiche produit alignée sur les mêmes composants ; versions, quantité et fenêtre de contact vérifiées.
 - Rendu vérifié sur ordinateur (1440 px) et mobile (375 px), sans erreur console.
+- Hero corrigé : la capsule dorée « à sa façon. » ne déborde plus sur la première ligne du titre ; étiquettes et carte statistique retirées ; carte produit masquée sur tablette pour ne plus couvrir les boutons.
