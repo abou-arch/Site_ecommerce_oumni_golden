@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf8f4">
+  <meta name="description" content="Beauté, soins, mode et cadeaux sélectionnés par Oumouna à Guédiawaye, Dakar.">
+  <title>Oumouna Rassoul Golden — L’art de se faire plaisir</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css"><script src="site.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-bar">
+      <a class="brand" href="index.html" aria-label="Oumouna Rassoul Golden — accueil"><span class="brand-mark" aria-hidden="true">O</span><span class="brand-name">Oumouna Rassoul<small>GOLDEN</small></span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale"><a href="#selection">La sélection</a><a href="#univers">Nos univers</a><a href="#cadeaux">Cadeaux</a><a href="#faq">Questions</a></nav>
+      <button class="pill pill-dark nav-cta" type="button" data-order="Bonjour Oumouna, je souhaite passer une commande.">Commander</button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span class="sr-only">Ouvrir le menu</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="images/hero-aestheticmatch.png" alt="Femme en abaya brodée tenant un bouquet de fleurs blanches, dans une lumière dorée" fetchpriority="high">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-glints" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="hero-copy">
+        <p class="eyebrow eyebrow-light">LA BOUTIQUE DU BONHEUR · DAKAR</p>
+        <h1 id="hero-title">Le plaisir de se faire belle, <mark>à sa façon.</mark></h1>
+        <div class="hero-actions">
+          <button class="pill pill-light pill-with-dot" type="button" data-order="Bonjour Oumouna, j’aimerais un conseil sur vos produits."><span class="pill-dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>Parler à Oumouna</button>
+          <a class="pill pill-light" href="#selection">Découvrir la sélection</a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="hero-tags"><a class="pill pill-glass" href="#univers">Beauté &amp; soins <span aria-hidden="true">↗</span></a><a class="pill pill-glass" href="#cadeaux">Idées cadeaux <span aria-hidden="true">↗</span></a></div>
+        <div class="glass hero-stat"><strong>5</strong><p>univers à explorer : beauté, bien-être, mode, bijoux et cadeaux.</p></div>
+        <a class="hero-feature" href="produit.html"><img src="images/creme-mains-aloe-vera.jpg" alt=""><span><small>À DÉCOUVRIR</small><strong>Crème pour les mains</strong><em>7 versions · prix à confirmer</em></span><i aria-hidden="true">↗</i></a>
+      </div>
+    </section>
+
+    <section class="section wrap" id="selection" aria-labelledby="selection-title">
+      <div class="section-head" data-reveal>
+        <div><h2 id="selection-title">Les essentiels du moment</h2><p class="section-lead">Des produits à découvrir, à choisir selon vos envies.</p></div>
+        <div class="section-head-actions"><div class="carousel-controls"><button type="button" aria-label="Produits précédents" data-scroll="prev">←</button><button type="button" aria-label="Produits suivants" data-scroll="next">→</button></div><a class="pill pill-dark" href="#univers">Tous les univers</a></div>
+      </div>
+      <div class="product-rail" data-product-grid aria-label="Sélection de produits" data-reveal></div>
+      <p class="fine-print">Prix et disponibilité confirmés avec Oumouna avant chaque commande.</p>
+    </section>
+
+    <section class="editorial wrap" id="inspiration" aria-labelledby="inspiration-title">
+      <figure class="editorial-photo" data-reveal>
+        <img src="images/hero-mobile.jpg" alt="Cliente souriante en abaya brodée, un sac à main noir au bras" loading="lazy">
+        <figcaption data-scroll-words>Une sélection pensée pour les petits plaisirs du quotidien.</figcaption>
+      </figure>
+      <div class="editorial-side">
+        <div data-reveal><h2 id="inspiration-title">Un éclat qui<br>vous ressemble.</h2><p>Des essentiels beauté aux idées à offrir, parcourez les trouvailles de la boutique et demandez conseil à Oumouna sur les produits disponibles.</p></div>
+        <div class="editorial-card" data-reveal style="--delay:.12s">
+          <img src="images/gamme-balea-rose.jpg" alt="Gamme de soins Balea aux tons roses" loading="lazy">
+          <div class="chip-row"><a class="chip" href="#univers">Beauté &amp; soins</a><a class="chip" href="#univers">Bien-être</a><a class="chip" href="#cadeaux">Cadeaux</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="univers" aria-labelledby="univers-title">
+      <div class="section-head" data-reveal>
+        <div><h2 id="univers-title">Nos univers</h2><p class="section-lead">Beauté, bien-être, accessoires et idées cadeaux : parcourez la boutique selon vos envies.</p></div>
+        <button class="text-link" type="button" data-order="Bonjour Oumouna, pouvez-vous me conseiller sur votre sélection ?">Demander conseil <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="univers-grid">
+        <a class="story-card" href="#selection" data-reveal><img src="images/gamme-hautrein-rose.jpg" alt="Produits de soin Balea roses" loading="lazy"><span class="story-arrow" aria-hidden="true">↗</span><span class="story-card-copy"><strong>Beauté &amp; soins</strong><span>Soins du visage, du corps et des mains.</span></span></a>
+        <a class="story-card" href="#selection" data-reveal style="--delay:.08s"><img src="images/huile-poisson.jpg" alt="Flacons de produits de bien-être alignés" loading="lazy"><span class="story-arrow" aria-hidden="true">↗</span><span class="story-card-copy"><strong>Bien-être</strong><span>Les essentiels du quotidien, à découvrir en boutique.</span></span></a>
+        <button class="story-card" type="button" data-order="Bonjour Oumouna, quels articles Mode &amp; maroquinerie sont disponibles ?" data-reveal style="--delay:.16s"><img src="images/mode-maroquinerie.jpg" alt="Sac à main noir porté avec une abaya" loading="lazy"><span class="story-arrow" aria-hidden="true">↗</span><span class="story-card-copy"><strong>Mode &amp; maroquinerie</strong><span>Sacs, ceintures, vêtements et lunettes.</span></span></button>
+        <button class="story-card story-card-empty" type="button" data-order="Bonjour Oumouna, quels modèles de montres et bijoux sont disponibles ?" data-reveal><span class="empty-mark" aria-hidden="true">OG</span><span class="story-arrow" aria-hidden="true">↗</span><span class="story-card-copy"><strong>Montres &amp; bijoux</strong><span>Photos à venir : demandez les modèles disponibles.</span></span></button>
+        <a class="story-card" href="#cadeaux" data-reveal style="--delay:.08s"><img src="images/peluche-rose-coeur.jpg" alt="Peluche rose tenant un cœur" loading="lazy"><span class="story-arrow" aria-hidden="true">↗</span><span class="story-card-copy"><strong>Idées cadeaux</strong><span>Peluches et petites attentions pour faire plaisir.</span></span></a>
+      </div>
+    </section>
+
+    <section class="panel-band wrap" id="cadeaux" aria-label="Commander et offrir">
+      <img class="panel-band-bg" src="images/hero-aestheticmatch.png" alt="" loading="lazy">
+      <div class="panel" data-reveal>
+        <h2>Commander,<br>tout simplement.</h2>
+        <ul class="link-list"><li><a href="#faq-commande">Comment commander <span aria-hidden="true">↗</span></a></li><li><a href="#faq-livraison">Livraison et délais <span aria-hidden="true">↗</span></a></li><li><a href="#faq-paiement">Moyens de paiement <span aria-hidden="true">↗</span></a></li><li><a href="#faq-echange">Échanges <span aria-hidden="true">↗</span></a></li></ul>
+        <div class="panel-foot"><strong>WhatsApp</strong><p>Chaque commande se confirme directement avec Oumouna. Aucun paiement en ligne.</p></div>
+      </div>
+      <div class="panel" data-reveal style="--delay:.12s">
+        <h2>Un cadeau<br>plein de douceur.</h2>
+        <ul class="link-list"><li><button type="button" data-order="Bonjour Oumouna, je cherche un cadeau d’anniversaire. Pouvez-vous me conseiller ?">Pour un anniversaire <span aria-hidden="true">↗</span></button></li><li><button type="button" data-order="Bonjour Oumouna, je cherche un cadeau pour dire merci. Pouvez-vous me conseiller ?">Pour dire merci <span aria-hidden="true">↗</span></button></li><li><button type="button" data-order="Bonjour Oumouna, je cherche une petite attention à offrir. Pouvez-vous me conseiller ?">Simplement pour faire plaisir <span aria-hidden="true">↗</span></button></li></ul>
+        <div class="mini-promo"><img src="images/peluche-ours.jpg" alt="Grand ourson en peluche brun" loading="lazy"><strong>Idées cadeaux</strong><button class="pill pill-light" type="button" data-order="Bonjour Oumouna, je cherche une idée cadeau. Pouvez-vous me conseiller ?">Imaginer un cadeau</button></div>
+      </div>
+    </section>
+
+    <section class="section wrap process" aria-labelledby="process-title">
+      <div class="process-head" data-reveal><h2 id="process-title">On en parle,<br>et on<br>s’organise.</h2><p class="section-lead">La commande se confirme directement avec Oumouna : prix, disponibilité, livraison et paiement se décident ensemble.</p></div>
+      <div class="steps">
+        <article class="step" data-reveal><span>01</span><h3>Vous choisissez</h3><p>Parcourez la sélection et repérez le produit qui vous plaît.</p></article>
+        <article class="step" data-reveal style="--delay:.08s"><span>02</span><h3>Oumouna confirme</h3><p>Prix et disponibilité sont confirmés avant de commander.</p></article>
+        <article class="step" data-reveal style="--delay:.16s"><span>03</span><h3>Vous convenez des détails</h3><p>Livraison, paiement et éventuel échange sont à confirmer ensemble.</p></article>
+      </div>
+    </section>
+
+    <section class="section wrap faq" id="faq" aria-labelledby="faq-title">
+      <div class="faq-intro" data-reveal><h2 id="faq-title">Des questions ?<br>On vous répond.</h2><p class="section-lead">Besoin d’un renseignement sur un produit ou une commande ? Contactez la boutique.</p><button class="text-link" type="button" data-order="Bonjour Oumouna, j’ai une question sur la boutique.">Poser une question <span aria-hidden="true">↗</span></button></div>
+      <div class="faq-list" data-reveal>
+        <details class="faq-item" id="faq-commande" open><summary>Comment passer commande ?<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p>Contactez Oumouna au sujet d’un produit. Elle vous confirmera son prix et sa disponibilité.</p></details>
+        <details class="faq-item" id="faq-livraison"><summary>Quels sont les délais de livraison ?<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p>Les zones, frais et délais sont à confirmer directement avec la boutique avant la commande.</p></details>
+        <details class="faq-item" id="faq-paiement"><summary>Quels moyens de paiement sont acceptés ?<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p>Les modes de paiement seront indiqués après confirmation par Oumouna.</p></details>
+        <details class="faq-item" id="faq-echange"><summary>Puis-je échanger un article ?<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p>Les conditions d’échange et de retour sont à confirmer avant toute commande.</p></details>
+      </div>
+    </section>
+
+    <section class="collage wrap" aria-labelledby="collage-title">
+      <figure class="collage-tile tile-1" data-speed="-0.12"><img src="images/creme-mains-camomille.jpg" alt="" loading="lazy"></figure>
+      <figure class="collage-tile tile-2 is-photo" data-speed="0.18"><img src="images/peluche-rose-coeur.jpg" alt="" loading="lazy"></figure>
+      <figure class="collage-tile tile-3 is-photo" data-speed="-0.08"><img src="images/gamme-hautrein.jpg" alt="" loading="lazy"></figure>
+      <figure class="collage-tile tile-4" data-speed="0.14"><img src="images/eponges-douche.jpg" alt="" loading="lazy"></figure>
+      <figure class="collage-tile tile-5" data-speed="-0.16"><img src="images/balea-creme-corps-karite-argan.jpg" alt="" loading="lazy"></figure>
+      <h2 id="collage-title" data-reveal>Prenez soin de vous,<br>faites-vous plaisir.</h2>
+    </section>
+
+    <section class="cta-banner wrap" id="contact" aria-labelledby="cta-title">
+      <svg class="cta-star cta-star-left" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 0C54 34 66 46 100 50 66 54 54 66 50 100 46 66 34 54 0 50 34 46 46 34 50 0Z"/></svg>
+      <svg class="cta-star cta-star-right" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 0C54 34 66 46 100 50 66 54 54 66 50 100 46 66 34 54 0 50 34 46 46 34 50 0Z"/></svg>
+      <div class="cta-copy" data-reveal><p class="eyebrow eyebrow-light">À GUÉDIAWAYE, DAKAR</p><h2 id="cta-title" class="sr-only">Une question ? Oumouna est là.</h2><button class="cta-pill" type="button" data-order="Bonjour Oumouna, je souhaite vous contacter.">Parler à Oumouna</button><p class="cta-note">Une question ? Oumouna est là.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-news"><h2>Les nouveautés, en premier</h2><p>Recevez les arrivages et les idées cadeaux directement sur WhatsApp.</p><button class="pill pill-dark" type="button" data-order="Bonjour Oumouna, j’aimerais être prévenue des nouveautés.">Être prévenue <span aria-hidden="true">→</span></button></div>
+      <div class="footer-cols">
+        <nav aria-label="Pages"><h3>Pages</h3><a href="index.html">Accueil</a><a href="#selection">La sélection</a><a href="#univers">Nos univers</a><a href="#faq">Questions</a></nav>
+        <div><h3>Infos</h3><span>Mentions légales <em>à venir</em></span><span>Conditions de vente <em>à venir</em></span><span>Confidentialité <em>à venir</em></span></div>
+        <nav aria-label="Boutique"><h3>Boutique</h3><a href="#univers">Beauté &amp; soins</a><a href="#univers">Bien-être</a><a href="#univers">Mode &amp; maroquinerie</a><a href="#cadeaux">Idées cadeaux</a></nav>
+      </div>
+    </div>
+    <div class="footer-mid"><p class="footer-contact">La boutique du bonheur · Guédiawaye, Dakar, Sénégal</p><small>© <span data-year></span> Oumouna Rassoul Golden · Démo, contenus à confirmer</small></div>
+    <p class="wordmark" aria-hidden="true">Golden</p>
+  </footer>
+
+  <div class="mobile-order"><button type="button" class="pill pill-gold" data-order="Bonjour Oumouna, je souhaite découvrir votre boutique.">Parler à Oumouna <span aria-hidden="true">↗</span></button></div>
+  <dialog class="contact-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Fermer">×</button><p class="eyebrow">CONTACT DE LA BOUTIQUE</p><h2 id="dialog-title">Parlons de votre envie.</h2><p data-dialog-message>Le numéro WhatsApp sera ajouté après confirmation par Oumouna.</p><button class="pill pill-dark" type="button" data-dialog-close>J’ai compris</button></dialog>
+</body>
+</html>
