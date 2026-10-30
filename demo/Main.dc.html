@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Accueil — Oumouna Rassoul Golden</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&amp;family=DM+Sans:opsz,wght@9..40,400..700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#17130F}a:hover{color:#8A6420}
+.ic{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+@keyframes ogZoom{from{transform:scale(1.03)}to{transform:scale(1)}}
+@keyframes ogUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes ogDrift{0%{transform:translateY(0);opacity:0}25%{opacity:.75}100%{transform:translateY(-70px);opacity:0}}
+@keyframes ogNav{from{background:rgba(255,255,255,.82);box-shadow:none}to{background:rgba(255,255,255,1);box-shadow:0 1px 0 #EAE3D8,0 8px 24px rgba(23,19,15,.06)}}
+.og-hero-img{animation:ogZoom 10s ease-out both}
+.og-up{animation:ogUp .6s ease-out .25s both}
+.og-up2{animation:ogUp .6s ease-out .45s both}
+.og-up3{animation:ogUp .6s ease-out .65s both}
+.og-spark{position:absolute;width:4px;height:4px;border-radius:50%;background:#E8CF8E;box-shadow:0 0 8px #E8CF8E;animation:ogDrift 9s linear infinite;pointer-events:none}
+.og-card{transition:transform .25s ease,box-shadow .25s ease}
+.og-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(23,19,15,.10)}
+.og-card img{transition:transform .45s ease}
+.og-card:hover img{transform:scale(1.03)}
+.og-btn{transition:transform .2s ease,filter .2s ease,box-shadow .2s ease}
+.og-btn:hover{transform:translateY(-1px);filter:brightness(1.06);box-shadow:0 6px 16px rgba(23,19,15,.18)}
+.og-faq summary{cursor:pointer;list-style:none}
+.og-faq summary::-webkit-details-marker{display:none}
+.og-faq[open] .og-plus{transform:rotate(45deg)}
+.og-plus{transition:transform .2s ease}
+@supports (animation-timeline: view()){.og-reveal{animation:ogUp linear both;animation-timeline:view();animation-range:entry 0% entry 35%}}
+@supports (animation-timeline: scroll()){.og-nav{animation:ogNav linear both;animation-timeline:scroll();animation-range:0 160px}}
+@media (max-width: 760px){
+.og-hero-box{min-height:0 !important}
+.og-hero-media{position:relative !important;height:380px !important}
+.og-hero-copy{padding:32px 24px 40px !important}
+.og-hero-title{font-size:44px !important}
+.og-hero-card{display:none !important}
+.og-spark:nth-of-type(n+4){display:none}
+.og-h2{font-size:34px !important}
+}
+@media (prefers-reduced-motion: reduce){
+*,*::before,*::after{animation:none !important;transition:none !important}
+.og-spark{display:none}
+}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #FFFFFF; color: #17130F; font-family: 'DM Sans', system-ui, sans-serif;">
+
+<div style="background: #17130F; color: #F3EDE3; font-size: 13px; padding: 10px 24px; text-align: center; letter-spacing: 0.02em;">La boutique du Bonheur · Guédiawaye, Dakar · Commande et conseil sur WhatsApp</div>
+
+<header class="og-nav" style="position: sticky; top: 0; z-index: 20; background: #FFFFFF; border-bottom: 1px solid #EAE3D8;">
+<div style="max-width: 1320px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+<a href="Main.dc.html" style="text-decoration: none; color: #17130F; display: flex; flex-direction: column; line-height: 1;">
+<span style="font-family: 'Bodoni Moda', serif; font-size: 25px;">Oumouna Rassoul</span>
+<span style="font-size: 11px; letter-spacing: 0.5em; color: #8A6420; margin-top: 6px; font-weight: 700;">GOLDEN</span>
+</a>
+<nav aria-label="Catégories" style="display: flex; flex-wrap: wrap; gap: 26px; font-size: 15px;">
+<a href="#categories" style="text-decoration: none;">Beauté &amp; soins</a>
+<a href="#categories" style="text-decoration: none;">Bien-être</a>
+<a href="#categories" style="text-decoration: none;">Mode &amp; maroquinerie</a>
+<a href="#categories" style="text-decoration: none;">Montres &amp; bijoux</a>
+<a href="#cadeaux" style="text-decoration: none; color: #8A6420; font-weight: 600;">Cadeaux</a>
+</nav>
+<div style="display: flex; gap: 8px; align-items: center;">
+<button aria-label="Rechercher" style="width: 44px; height: 44px; border: none; background: transparent; color: #17130F; cursor: pointer; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" class="ic" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg></button>
+<a href="#whatsapp" class="og-btn" style="background: #17130F; color: #FBF8F3; padding: 0 22px; min-height: 44px; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"></path></svg>Commander</a>
+</div>
+</div>
+</header>
+
+<section style="max-width: 1320px; margin: 0 auto; padding: 20px 24px 0;">
+<div class="og-hero-box" style="position: relative; min-height: 660px; border-radius: 28px; overflow: hidden; background: #120E0A; display: flex; flex-direction: column; justify-content: center;">
+<div class="og-hero-media" style="position: absolute; inset: 0; overflow: hidden;">
+<img class="og-hero-img" src="/_blob/1e84c1ad139c7bc96514f9db5270f320" alt="Cliente en abaya brune avec un sac noir et des bijoux dorés, dans une boutique aux lumières dorées" style="width: 100%; height: 100%; object-fit: cover; object-position: 72% center; display: block;">
+</div>
+<span class="og-spark" aria-hidden="true" style="left: 8%; top: 70%; animation-delay: 0s;"></span>
+<span class="og-spark" aria-hidden="true" style="left: 22%; top: 82%; animation-delay: 2.5s;"></span>
+<span class="og-spark" aria-hidden="true" style="left: 37%; top: 64%; animation-delay: 5s;"></span>
+<span class="og-spark" aria-hidden="true" style="left: 48%; top: 88%; animation-delay: 1.2s;"></span>
+<span class="og-spark" aria-hidden="true" style="left: 14%; top: 40%; animation-delay: 6.5s;"></span>
+<span class="og-spark" aria-hidden="true" style="left: 55%; top: 30%; animation-delay: 3.8s;"></span>
+<div class="og-hero-copy" style="position: relative; z-index: 2; padding: 72px 64px; max-width: 620px; display: flex; flex-direction: column; gap: 22px; color: #FBF8F3;">
+<p class="og-up" style="margin: 0; font-size: 13px; letter-spacing: 0.3em; color: {{gold}}; font-weight: 600;">LA BOUTIQUE DU BONHEUR</p>
+<h1 class="og-up og-hero-title" style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 68px; line-height: 1.04;">L’allure du luxe, <span style="display: inline-block; background: {{gold}}; color: #17130F; border-radius: 999px; padding: 0 0.32em 0.06em; font-style: italic;">à votre portée.</span></h1>
+<p class="og-up2" style="margin: 0; font-size: 18px; line-height: 1.6; color: #E4DCCF; max-width: 470px;">Beauté, soins, bien-être, mode et cadeaux pour toute la famille, choisis par Oumouna à Guédiawaye.</p>
+<div class="og-up3" style="display: flex; flex-wrap: wrap; gap: 12px;">
+<a href="#selection" class="og-btn" style="background: {{gold}}; color: #17130F; padding: 0 28px; min-height: 52px; text-decoration: none; font-weight: 600; border-radius: 999px; display: inline-flex; align-items: center;">Découvrir la sélection</a>
+<a href="#whatsapp" class="og-btn" style="border: 1px solid rgba(251, 248, 243, 0.7); color: #FBF8F3; padding: 0 24px; min-height: 52px; text-decoration: none; font-weight: 600; border-radius: 999px; display: inline-flex; align-items: center; gap: 10px;"><svg width="20" height="20" viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"></path></svg>Commander sur WhatsApp</a>
+</div>
+</div>
+<div class="og-hero-card og-up3" style="position: absolute; z-index: 2; right: 32px; bottom: 32px; background: rgba(23, 19, 15, 0.62); backdrop-filter: blur(10px); border: 1px solid rgba(232, 207, 142, 0.35); border-radius: 18px; padding: 18px 22px; color: #FBF8F3; display: flex; flex-direction: column; gap: 4px;">
+<span style="font-family: 'Bodoni Moda', serif; font-size: 22px;">Homme · Femme · Enfant</span>
+<span style="font-size: 14px; color: #D9D1C4;">Conseil personnalisé sur WhatsApp</span>
+</div>
+</div>
+</section>
+
+<section id="categories" class="og-reveal" style="max-width: 1320px; margin: 0 auto; padding: 72px 24px 24px;">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 28px;">
+<h2 class="og-h2" style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 44px;">Explorer la boutique</h2>
+<p style="margin: 0; font-size: 15px; color: #5E554B;">Cinq univers, une seule adresse.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+<a href="#selection" class="og-card" style="text-decoration: none; color: #17130F; border-radius: 22px; overflow: hidden; background: #F6F1EA; display: flex; flex-direction: column;"><div style="height: 230px; overflow: hidden;"><img src="/_blob/4c1b30003d0dcbd157906126e5035d83" alt="Gamme de soins Balea aux emballages roses" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div><div style="padding: 16px 18px 18px;"><span style="font-family: 'Bodoni Moda', serif; font-size: 21px;">Beauté &amp; soins</span><p style="margin: 4px 0 0; font-size: 14px; color: #5E554B;">Visage, corps, mains, cosmétiques</p></div></a>
+<a href="#selection" class="og-card" style="text-decoration: none; color: #17130F; border-radius: 22px; overflow: hidden; background: #F6F1EA; display: flex; flex-direction: column;"><div style="height: 230px; overflow: hidden;"><img src="/_blob/c61e5d81f327d76260249eabd2f6ee6d" alt="Flacons d’huile de poisson en rayon" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div><div style="padding: 16px 18px 18px;"><span style="font-family: 'Bodoni Moda', serif; font-size: 21px;">Bien-être</span><p style="margin: 4px 0 0; font-size: 14px; color: #5E554B;">Compléments, infusions, hygiène</p></div></a>
+<a href="#selection" class="og-card" style="text-decoration: none; color: #17130F; border-radius: 22px; overflow: hidden; background: #F6F1EA; display: flex; flex-direction: column;"><div style="height: 230px; overflow: hidden;"><img src="/_blob/4cca959f8256c850faa11df55a801719" alt="Cliente portant un sac à main noir" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block;"></div><div style="padding: 16px 18px 18px;"><span style="font-family: 'Bodoni Moda', serif; font-size: 21px;">Mode &amp; maroquinerie</span><p style="margin: 4px 0 0; font-size: 14px; color: #5E554B;">Habillement, sacs, pochettes</p></div></a>
+<a href="#selection" class="og-card" style="text-decoration: none; color: #17130F; border-radius: 22px; overflow: hidden; background: #F6F1EA; display: flex; flex-direction: column;"><div style="height: 230px; background: #17130F; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;"><span style="font-family: 'Bodoni Moda', serif; font-size: 44px; color: {{gold}};">OG</span><span style="font-size: 13px; color: #CFC6B8;">Photos à venir</span></div><div style="padding: 16px 18px 18px;"><span style="font-family: 'Bodoni Moda', serif; font-size: 21px;">Montres &amp; bijoux</span><p style="margin: 4px 0 0; font-size: 14px; color: #5E554B;">Montres, bijoux, lunettes, ceintures</p></div></a>
+<a href="#cadeaux" class="og-card" style="text-decoration: none; color: #17130F; border-radius: 22px; overflow: hidden; background: #F6F1EA; display: flex; flex-direction: column;"><div style="height: 230px; overflow: hidden;"><img src="/_blob/12ea826918823397c7779f593899a338" alt="Peluche ourson rose tenant un cœur" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div><div style="padding: 16px 18px 18px;"><span style="font-family: 'Bodoni Moda', serif; font-size: 21px;">Cadeaux</span><p style="margin: 4px 0 0; font-size: 14px; color: #5E554B;">Peluches, idées à offrir</p></div></a>
+</div>
+</section>
+
+<section id="selection" class="og-reveal" style="max-width: 1320px; margin: 0 auto; padding: 64px 24px 80px;">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 32px;">
+<div style="display: flex; flex-direction: column; gap: 8px;">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.3em; color: #8A6420; font-weight: 600;">SÉLECTION</p>
+<h2 class="og-h2" style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 44px;">Les choix d’Oumouna</h2>
+</div>
+<a href="#categories" style="font-weight: 600; font-size: 15px;">Voir tous les produits</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+<sc-for list="{{products}}" as="item" hint-placeholder-count="8">
+<article class="og-card" style="background: #FFFFFF; border: 1px solid #EFE8DD; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column;">
+<a href="{{item.href}}" style="display: block; height: 260px; background: #FAF7F2; overflow: hidden;"><img src="{{item.img}}" alt="{{item.alt}}" style="width: 100%; height: 100%; object-fit: {{item.fit}}; display: block;"></a>
+<div style="padding: 18px 18px 20px; display: flex; flex-direction: column; gap: 6px; flex-grow: 1;">
+<span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #5E554B;">{{item.brand}}</span>
+<a href="{{item.href}}" style="font-family: 'Bodoni Moda', serif; font-size: 20px; line-height: 1.25; text-decoration: none;">{{item.name}}</a>
+<span style="font-size: 14px; color: #5E554B;">{{item.detail}}</span>
+<span style="font-size: 15px; font-weight: 600; margin-top: 4px;">Prix à confirmer</span>
+<a href="#whatsapp" class="og-btn" style="margin-top: 10px; border: 1px solid #17130F; color: #17130F; min-height: 44px; text-decoration: none; font-weight: 600; font-size: 14px; border-radius: 999px; display: flex; align-items: center; justify-content: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"></path></svg>Commander</a>
+</div>
+</article>
+</sc-for>
+</div>
+</section>
+
+<section class="og-reveal" style="background: #F6F1EA;">
+<div style="max-width: 1320px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center;">
+<div style="flex: 1 1 480px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;">
+<div style="grid-row: span 2; border-radius: 22px; overflow: hidden; min-height: 520px;"><img src="/_blob/e2e8508c69f9f1f584151c2dc6470a3c" alt="Gamme Balea à la vitamine C posée sur une fourrure blanche" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+<div style="border-radius: 22px; overflow: hidden; height: 253px;"><img src="/_blob/3ebb50055da62b1bf3b6a92bd05ce8e6" alt="Gamme Balea Hautrein pour le visage" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+<div style="border-radius: 22px; overflow: hidden; height: 253px;"><img src="/_blob/773b79cbe56dd4c1672246d652e66ad5" alt="Gamme nettoyante Balea à l’aloe vera" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+</div>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 20px;">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.3em; color: #8A6420; font-weight: 600;">ROUTINES</p>
+<h2 class="og-h2" style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 44px; line-height: 1.1;">Des gammes complètes, du nettoyant à la crème</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3F382F;">Vous ne savez pas quoi choisir ? Écrivez à Oumouna : elle vous aide à composer votre routine avec les produits disponibles.</p>
+<a href="#whatsapp" class="og-btn" style="align-self: flex-start; background: #17130F; color: #FBF8F3; padding: 0 26px; min-height: 52px; text-decoration: none; font-weight: 600; border-radius: 999px; display: inline-flex; align-items: center; gap: 10px;"><svg width="20" height="20" viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"></path></svg>Demander conseil</a>
+</div>
+</div>
+</section>
+
+<section aria-label="Commander et se faire livrer" class="og-reveal" style="max-width: 1320px; margin: 0 auto; padding: 88px 24px;">
+<h2 class="og-h2" style="margin: 0 0 32px; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 44px;">Commander, simplement</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+<div style="border: 1px solid #EAE3D8; border-radius: 22px; padding: 26px; display: flex; flex-direction: column; gap: 12px;"><svg width="30" height="30" viewBox="0 0 24 24" class="ic" style="color: #8A6420;" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"></path></svg><p style="margin: 0; font-weight: 600; font-size: 17px;">1. Vous choisissez</p><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #5E554B;">Vous envoyez le produit qui vous plaît sur WhatsApp, Oumouna confirme la disponibilité et le prix.</p></div>
+<div style="border: 1px solid #EAE3D8; border-radius: 22px; padding: 26px; display: flex; flex-direction: column; gap: 12px;"><svg width="30" height="30" viewBox="0 0 24 24" class="ic" style="color: #8A6420;" aria-hidden="true"><path d="M3 6h11v9H3z"></path><path d="M14 9h4l3 3v3h-7"></path><circle cx="7" cy="17" r="1.6"></circle><circle cx="17" cy="17" r="1.6"></circle></svg><p style="margin: 0; font-weight: 600; font-size: 17px;">2. On vous livre</p><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #5E554B;">Dakar et régions. Délais et frais : [à confirmer].</p></div>
+<div style="border: 1px solid #EAE3D8; border-radius: 22px; padding: 26px; display: flex; flex-direction: column; gap: 12px;"><svg width="30" height="30" viewBox="0 0 24 24" class="ic" style="color: #8A6420;" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="1"></rect><circle cx="12" cy="12" r="2.2"></circle></svg><p style="margin: 0; font-weight: 600; font-size: 17px;">3. Vous payez</p><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #5E554B;">Wave, Orange Money ou à la livraison : [modes à confirmer].</p></div>
+<div style="border: 1px solid #EAE3D8; border-radius: 22px; padding: 26px; display: flex; flex-direction: column; gap: 12px;"><svg width="30" height="30" viewBox="0 0 24 24" class="ic" style="color: #8A6420;" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.4"></circle></svg><p style="margin: 0; font-weight: 600; font-size: 17px;">Une boutique réelle</p><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #5E554B;">Basée à Guédiawaye, Dakar. Adresse précise : [à confirmer].</p></div>
+</div>
+</section>
+
+<section id="cadeaux" class="og-reveal" style="max-width: 1320px; margin: 0 auto; padding: 0 24px 88px;">
+<div style="background: #17130F; color: #FBF8F3; border-radius: 28px; overflow: hidden; display: flex; flex-wrap: wrap;">
+<div style="flex: 1 1 420px; min-height: 460px;"><img src="/_blob/0fcb80fc6ab6673919e5cffa85b293da" alt="Grand ourson en peluche brun avec un nœud" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+<div style="flex: 1 1 460px; padding: 56px 48px; display: flex; flex-direction: column; gap: 18px;">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.3em; color: {{gold}}; font-weight: 600;">POUR ELLE, POUR LUI, POUR LES ENFANTS</p>
+<h2 class="og-h2" style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 48px; line-height: 1.08;">Offrez de l’or.</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #D9D1C4;">Une peluche, un soin, un accessoire : dites votre budget à Oumouna, elle compose le cadeau avec vous.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+<span style="border: 1px solid #4A3F33; border-radius: 999px; padding: 10px 16px; font-size: 15px;">Petite attention · [budget]</span>
+<span style="border: 1px solid {{gold}}; border-radius: 999px; padding: 10px 16px; font-size: 15px;">Belle surprise · [budget]</span>
+<span style="border: 1px solid #4A3F33; border-radius: 999px; padding: 10px 16px; font-size: 15px;">Grand geste · [budget]</span>
+</div>
+<a href="#whatsapp" class="og-btn" style="align-self: flex-start; background: {{gold}}; color: #17130F; padding: 0 26px; min-height: 52px; text-decoration: none; font-weight: 600; border-radius: 999px; display: inline-flex; align-items: center; margin-top: 6px;">Composer un cadeau</a>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="faq-titre" class="og-reveal" style="background: #F6F1EA;">
+<div style="max-width: 900px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 28px;">
+<h2 id="faq-titre" class="og-h2" style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 44px; text-align: center;">Questions fréquentes</h2>
+<div style="display: flex; flex-direction: column; gap: 10px;">
+<details class="og-faq" style="background: #FFFFFF; border-radius: 18px; padding: 20px 24px;"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 600; font-size: 17px;">Comment passer commande ?<span class="og-plus" aria-hidden="true" style="font-size: 24px; color: #8A6420;">+</span></summary><p style="margin: 12px 0 0; font-size: 15px; line-height: 1.6; color: #3F382F;">Cliquez sur « Commander » : WhatsApp s’ouvre avec le nom du produit. Oumouna vous répond pour confirmer la disponibilité, le prix et la livraison.</p></details>
+<details class="og-faq" style="background: #FFFFFF; border-radius: 18px; padding: 20px 24px;"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 600; font-size: 17px;">Quels sont les moyens de paiement ?<span class="og-plus" aria-hidden="true" style="font-size: 24px; color: #8A6420;">+</span></summary><p style="margin: 12px 0 0; font-size: 15px; line-height: 1.6; color: #3F382F;">[À confirmer avec Oumouna : Wave, Orange Money, paiement à la livraison.]</p></details>
+<details class="og-faq" style="background: #FFFFFF; border-radius: 18px; padding: 20px 24px;"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 600; font-size: 17px;">Livrez-vous en dehors de Dakar ?<span class="og-plus" aria-hidden="true" style="font-size: 24px; color: #8A6420;">+</span></summary><p style="margin: 12px 0 0; font-size: 15px; line-height: 1.6; color: #3F382F;">[À confirmer : zones, délais et frais de livraison.]</p></details>
+<details class="og-faq" style="background: #FFFFFF; border-radius: 18px; padding: 20px 24px;"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 600; font-size: 17px;">Puis-je échanger ou retourner un produit ?<span class="og-plus" aria-hidden="true" style="font-size: 24px; color: #8A6420;">+</span></summary><p style="margin: 12px 0 0; font-size: 15px; line-height: 1.6; color: #3F382F;">[À confirmer : conditions d’échange et de retour.]</p></details>
+<details class="og-faq" style="background: #FFFFFF; border-radius: 18px; padding: 20px 24px;"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 600; font-size: 17px;">Pouvez-vous m’aider à choisir un cadeau ?<span class="og-plus" aria-hidden="true" style="font-size: 24px; color: #8A6420;">+</span></summary><p style="margin: 12px 0 0; font-size: 15px; line-height: 1.6; color: #3F382F;">Oui. Indiquez à Oumouna pour qui est le cadeau et votre budget, elle vous propose des idées parmi les produits disponibles.</p></details>
+</div>
+</div>
+</section>
+
+<section class="og-reveal" style="max-width: 1320px; margin: 0 auto; padding: 72px 24px;">
+<div style="border: 1px solid #EAE3D8; border-radius: 28px; padding: 48px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between;">
+<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 10px;">
+<h2 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 34px;">Les nouveautés, en premier</h2>
+<p style="margin: 0; font-size: 16px; color: #5E554B;">Recevez les arrivages et les idées cadeaux sur WhatsApp. Facultatif, sans engagement.</p>
+</div>
+<form style="flex: 1 1 380px; display: flex; flex-wrap: wrap; gap: 10px;" onSubmit="{{noSubmit}}">
+<label for="tel-nouveautes" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0);">Numéro WhatsApp</label>
+<input id="tel-nouveautes" type="tel" placeholder="Votre numéro WhatsApp" style="flex: 1 1 220px; min-height: 52px; border: 1px solid #CFC6B8; border-radius: 999px; padding: 0 20px; font-size: 16px; font-family: inherit;">
+<button type="submit" class="og-btn" style="min-height: 52px; padding: 0 26px; border: none; border-radius: 999px; background: #17130F; color: #FBF8F3; font-weight: 600; font-size: 15px; font-family: inherit; cursor: pointer;">M’inscrire</button>
+</form>
+</div>
+</section>
+
+<footer style="background: #17130F; color: #D9D1C4;">
+<div style="max-width: 1320px; margin: 0 auto; padding: 64px 24px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px;">
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<span style="font-family: 'Bodoni Moda', serif; font-size: 24px; color: #FBF8F3;">Oumouna Rassoul</span>
+<span style="font-size: 11px; letter-spacing: 0.5em; color: {{gold}}; font-weight: 700; margin-top: -6px;">GOLDEN</span>
+<p style="margin: 0; font-size: 14px; line-height: 1.6;">La boutique du Bonheur.<br>Homme · Femme · Enfant.</p>
+</div>
+<nav aria-label="Boutique" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+<span style="color: #FBF8F3; font-weight: 600;">Boutique</span>
+<a href="#categories" style="color: #D9D1C4; text-decoration: none;">Beauté &amp; soins</a>
+<a href="#categories" style="color: #D9D1C4; text-decoration: none;">Bien-être</a>
+<a href="#categories" style="color: #D9D1C4; text-decoration: none;">Mode &amp; maroquinerie</a>
+<a href="#categories" style="color: #D9D1C4; text-decoration: none;">Montres &amp; bijoux</a>
+<a href="#cadeaux" style="color: #D9D1C4; text-decoration: none;">Cadeaux</a>
+</nav>
+<nav aria-label="Aide" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+<span style="color: #FBF8F3; font-weight: 600;">Aide</span>
+<a href="#faq-titre" style="color: #D9D1C4; text-decoration: none;">Questions fréquentes</a>
+<a href="#faq-titre" style="color: #D9D1C4; text-decoration: none;">Livraison</a>
+<a href="#faq-titre" style="color: #D9D1C4; text-decoration: none;">Paiement</a>
+<a href="#faq-titre" style="color: #D9D1C4; text-decoration: none;">Échanges et retours</a>
+</nav>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+<span style="color: #FBF8F3; font-weight: 600;">Contact</span>
+<span>Guédiawaye, Dakar, Sénégal</span>
+<span>+221 77 751 37 80</span>
+<span>+221 77 264 64 92</span>
+<span>Facebook · Instagram · TikTok · Snapchat</span>
+</div>
+</div>
+<div style="max-width: 1320px; margin: 0 auto; padding: 20px 24px 32px; border-top: 1px solid #3A322A; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; font-size: 13px;">
+<span>© 2026 Oumouna Rassoul Golden · Démo, non publiée</span>
+<div style="display: flex; flex-wrap: wrap; gap: 20px;"><a href="#" style="color: #D9D1C4;">Mentions légales</a><a href="#" style="color: #D9D1C4;">CGV</a><a href="#" style="color: #D9D1C4;">Confidentialité</a></div>
+</div>
+</footer>
+
+<a href="#whatsapp" aria-label="Commander sur WhatsApp" class="og-btn" style="position: fixed; z-index: 30; right: 24px; bottom: 24px; width: 60px; height: 60px; border-radius: 999px; background: {{gold}}; color: #17130F; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 20px rgba(23, 19, 15, 0.25);"><svg width="26" height="26" viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"></path></svg></a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"gold":{"editor":"color","default":"#C9A24A","options":["#C9A24A","#B8893A","#D8B76A","#E0C27A"]},"$preview":{"width":1440,"height":5400}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      gold: this.props.gold ?? "#C9A24A",
+      noSubmit: (event) => { event.preventDefault(); },
+      products: [
+        { brand: "Balea", name: "Crème pour les mains", detail: "7 versions au choix", img: "/_blob/b0119dc762c16dbe189081f5c385cea1", alt: "Tube de crème pour les mains Balea Aloe Vera", fit: "contain", href: "Produit.dc.html" },
+        { brand: "Balea", name: "Crème corps karité et huile d’argan", detail: "Pot de crème pour le corps", img: "/_blob/ea3c8d5b70021fd43ec3d4925b5f3a6a", alt: "Pot de crème corps Balea karité et argan", fit: "contain", href: "#whatsapp" },
+        { brand: "Mixa", name: "Baume réparateur Cica Repair+ 10-en-1", detail: "Pot de baume", img: "/_blob/2d32988fec2da95efe418a634d113df4", alt: "Pot de baume Mixa Cica Repair+", fit: "contain", href: "#whatsapp" },
+        { brand: "Balea", name: "Crème de jour Vital", detail: "Pot et sa boîte", img: "/_blob/9888996843d90f7895142e48b6a58d26", alt: "Crème de jour Balea Vital et sa boîte", fit: "contain", href: "#whatsapp" },
+        { brand: "Balea", name: "Déodorant crème Sensitive", detail: "Pot de déodorant crème", img: "/_blob/a0cef117c4a0eb55a35dcbfad1f42c3d", alt: "Pot de déodorant crème Balea Sensitive", fit: "contain", href: "#whatsapp" },
+        { brand: "Balea", name: "Huile démaquillante à l’argan", detail: "Flacon pompe", img: "/_blob/4bf9e3d58e9e682c2c9b35e5b5c9338b", alt: "Flacon d’huile démaquillante Balea à l’argan", fit: "contain", href: "#whatsapp" },
+        { brand: "Cadeaux", name: "Ourson en peluche", detail: "Taille à confirmer", img: "/_blob/0fcb80fc6ab6673919e5cffa85b293da", alt: "Ourson en peluche brun avec un nœud", fit: "cover", href: "#cadeaux" },
+        { brand: "Soins du corps", name: "Éponges de douche tressées", detail: "Trois coloris", img: "/_blob/10b76a548e90bc6650b7d4e834cb4d10", alt: "Trois éponges de douche tressées crème, rose et vert", fit: "cover", href: "#whatsapp" }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
