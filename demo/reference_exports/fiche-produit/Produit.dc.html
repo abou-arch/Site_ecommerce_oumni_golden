@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Fiche produit — Crème pour les mains Balea</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&amp;family=DM+Sans:opsz,wght@9..40,400..700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#17130F}a:hover{color:#8A6420}
+.ic{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+@keyframes ogFade{from{opacity:.35}to{opacity:1}}
+.og-main-img{animation:ogFade .35s ease-out both}
+.og-card{transition:transform .25s ease,box-shadow .25s ease}
+.og-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(23,19,15,.10)}
+.og-btn{transition:transform .2s ease,filter .2s ease,box-shadow .2s ease}
+.og-btn:hover{transform:translateY(-1px);filter:brightness(1.06);box-shadow:0 6px 16px rgba(23,19,15,.18)}
+.og-thumb{transition:border-color .2s ease}
+.og-faq summary{cursor:pointer;list-style:none}
+.og-faq summary::-webkit-details-marker{display:none}
+@media (max-width: 760px){.og-main{height:420px !important}.og-h1{font-size:34px !important}}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none !important;transition:none !important}}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #FFFFFF; color: #17130F; font-family: 'DM Sans', system-ui, sans-serif;">
+
+<div style="background: #17130F; color: #F3EDE3; font-size: 13px; padding: 10px 24px; text-align: center; letter-spacing: 0.02em;">La boutique du Bonheur · Guédiawaye, Dakar · Commande et conseil sur WhatsApp</div>
+
+<header style="position: sticky; top: 0; z-index: 20; background: #FFFFFF; border-bottom: 1px solid #EAE3D8;">
+<div style="max-width: 1320px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+<a href="Main.dc.html" style="text-decoration: none; color: #17130F; display: flex; flex-direction: column; line-height: 1;">
+<span style="font-family: 'Bodoni Moda', serif; font-size: 25px;">Oumouna Rassoul</span>
+<span style="font-size: 11px; letter-spacing: 0.5em; color: #8A6420; margin-top: 6px; font-weight: 700;">GOLDEN</span>
+</a>
+<nav aria-label="Catégories" style="display: flex; flex-wrap: wrap; gap: 26px; font-size: 15px;">
+<a href="Main.dc.html" style="text-decoration: none; font-weight: 600;">Beauté &amp; soins</a>
+<a href="Main.dc.html" style="text-decoration: none;">Bien-être</a>
+<a href="Main.dc.html" style="text-decoration: none;">Mode &amp; maroquinerie</a>
+<a href="Main.dc.html" style="text-decoration: none;">Montres &amp; bijoux</a>
+<a href="Main.dc.html" style="text-decoration: none; color: #8A6420; font-weight: 600;">Cadeaux</a>
+</nav>
+<a href="#whatsapp" class="og-btn" style="background: #17130F; color: #FBF8F3; padding: 0 22px; min-height: 44px; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"></path></svg>Commander</a>
+</div>
+</header>
+
+<nav aria-label="Fil d’Ariane" style="max-width: 1320px; margin: 0 auto; padding: 20px 24px 0; font-size: 14px; color: #5E554B; display: flex; gap: 8px; flex-wrap: wrap;">
+<a href="Main.dc.html" style="color: #5E554B;">Accueil</a><span aria-hidden="true">/</span><a href="Main.dc.html" style="color: #5E554B;">Beauté &amp; soins</a><span aria-hidden="true">/</span><span style="color: #17130F;">Crème pour les mains</span>
+</nav>
+
+<section style="max-width: 1320px; margin: 0 auto; padding: 24px 24px 80px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start;">
+<div style="flex: 1 1 540px; min-width: 0; display: flex; flex-direction: column; gap: 12px;">
+<div class="og-main" style="height: 620px; background: #FAF7F2; border-radius: 28px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+<sc-for list="{{shown}}" as="s" hint-placeholder-count="1">
+<img class="og-main-img" src="{{s.img}}" alt="{{s.alt}}" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+</sc-for>
+</div>
+<div role="group" aria-label="Versions en image" style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px;">
+<sc-for list="{{variants}}" as="v" hint-placeholder-count="7">
+<button class="og-thumb" onClick="{{v.pick}}" aria-label="Voir la version {{v.label}}" aria-pressed="{{v.pressed}}" style="height: 88px; padding: 4px; border-radius: 14px; background: #FAF7F2; border: 2px solid {{v.ring}}; cursor: pointer;"><img src="{{v.img}}" alt="" style="width: 100%; height: 100%; object-fit: contain; display: block;"></button>
+</sc-for>
+</div>
+</div>
+
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 22px;">
+<div style="display: flex; flex-direction: column; gap: 10px;">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.3em; color: #8A6420; font-weight: 600;">BALEA · SOIN DES MAINS</p>
+<h1 class="og-h1" style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 46px; line-height: 1.08;">Crème pour les mains</h1>
+<p style="margin: 0; font-size: 22px; font-weight: 600;">Prix à confirmer</p>
+</div>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3F382F;">Tube de crème pour les mains de la marque Balea, disponible en 7 versions. Contenance : [à confirmer].</p>
+
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<p style="margin: 0; font-size: 15px;"><span style="font-weight: 600;">Version :</span> {{current.label}}</p>
+<div role="group" aria-label="Choisir la version" style="display: flex; flex-wrap: wrap; gap: 8px;">
+<sc-for list="{{variants}}" as="v" hint-placeholder-count="7">
+<button onClick="{{v.pick}}" aria-pressed="{{v.pressed}}" style="min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid {{v.chipBorder}}; background: {{v.chipBg}}; color: {{v.chipText}}; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer;">{{v.label}}</button>
+</sc-for>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<p style="margin: 0; font-size: 15px; font-weight: 600;">Quantité</p>
+<div style="display: inline-flex; align-self: flex-start; align-items: center; border: 1px solid #CFC6B8; border-radius: 999px;">
+<button aria-label="Retirer un tube" onClick="{{minus}}" style="width: 48px; height: 48px; border: none; background: transparent; font-size: 20px; cursor: pointer; color: #17130F;">−</button>
+<span aria-live="polite" style="min-width: 32px; text-align: center; font-weight: 600; font-size: 16px;">{{qty}}</span>
+<button aria-label="Ajouter un tube" onClick="{{plus}}" style="width: 48px; height: 48px; border: none; background: transparent; font-size: 20px; cursor: pointer; color: #17130F;">+</button>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<a href="#whatsapp" class="og-btn" style="background: {{gold}}; color: #17130F; min-height: 56px; text-decoration: none; font-weight: 600; font-size: 16px; border-radius: 999px; display: flex; align-items: center; justify-content: center; gap: 10px;"><svg width="20" height="20" viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"></path></svg>Commander sur WhatsApp</a>
+<div style="background: #F6F1EA; border-radius: 16px; padding: 14px 18px; display: flex; flex-direction: column; gap: 6px;">
+<span style="font-size: 12px; letter-spacing: 0.14em; color: #5E554B; font-weight: 600;">MESSAGE PRÉPARÉ</span>
+<span style="font-size: 15px; line-height: 1.5;">{{message}}</span>
+</div>
+<p style="margin: 0; font-size: 14px; color: #5E554B; line-height: 1.5;">Le site ne prend pas encore de paiement en ligne : la commande se finalise avec Oumouna sur WhatsApp.</p>
+</div>
+
+<div style="border: 1px solid #EAE3D8; border-radius: 20px; padding: 20px 22px; display: flex; flex-direction: column; gap: 14px;">
+<div style="display: flex; gap: 14px; align-items: flex-start;"><svg width="24" height="24" viewBox="0 0 24 24" class="ic" style="color: #8A6420; flex-shrink: 0;" aria-hidden="true"><path d="M3 6h11v9H3z"></path><path d="M14 9h4l3 3v3h-7"></path><circle cx="7" cy="17" r="1.6"></circle><circle cx="17" cy="17" r="1.6"></circle></svg><p style="margin: 0; font-size: 15px; line-height: 1.5;"><span style="font-weight: 600;">Livraison :</span> Dakar et régions, délais et frais [à confirmer]</p></div>
+<div style="display: flex; gap: 14px; align-items: flex-start;"><svg width="24" height="24" viewBox="0 0 24 24" class="ic" style="color: #8A6420; flex-shrink: 0;" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="1"></rect><circle cx="12" cy="12" r="2.2"></circle></svg><p style="margin: 0; font-size: 15px; line-height: 1.5;"><span style="font-weight: 600;">Paiement :</span> [modes à confirmer : Wave, Orange Money, à la livraison]</p></div>
+<div style="display: flex; gap: 14px; align-items: flex-start;"><svg width="24" height="24" viewBox="0 0 24 24" class="ic" style="color: #8A6420; flex-shrink: 0;" aria-hidden="true"><path d="M4 12a8 8 0 1 0 3-6.2"></path><path d="M4 4v4h4"></path></svg><p style="margin: 0; font-size: 15px; line-height: 1.5;"><span style="font-weight: 600;">Échange et retour :</span> [conditions à confirmer]</p></div>
+</div>
+
+<details class="og-faq" style="border-bottom: 1px solid #EAE3D8; padding: 4px 0 16px;"><summary style="font-weight: 600; font-size: 16px;">Composition et utilisation</summary><p style="margin: 12px 0 0; font-size: 15px; line-height: 1.6; color: #3F382F;">[À reprendre de l’emballage de chaque version, en français.]</p></details>
+</div>
+</section>
+
+<section style="background: #F6F1EA;">
+<div style="max-width: 1320px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 28px;">
+<h2 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 36px;">Dans la même routine</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+<sc-for list="{{related}}" as="item" hint-placeholder-count="4">
+<article class="og-card" style="background: #FFFFFF; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column;">
+<a href="#whatsapp" style="display: block; height: 220px; background: #FAF7F2;"><img src="{{item.img}}" alt="{{item.alt}}" style="width: 100%; height: 100%; object-fit: contain; display: block;"></a>
+<div style="padding: 16px 18px 20px; display: flex; flex-direction: column; gap: 6px;">
+<span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #5E554B;">{{item.brand}}</span>
+<a href="#whatsapp" style="font-family: 'Bodoni Moda', serif; font-size: 19px; line-height: 1.25; text-decoration: none;">{{item.name}}</a>
+<span style="font-size: 15px; font-weight: 600;">Prix à confirmer</span>
+</div>
+</article>
+</sc-for>
+</div>
+</div>
+</section>
+
+<footer style="background: #17130F; color: #D9D1C4;">
+<div style="max-width: 1320px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; font-size: 13px;">
+<span>© 2026 Oumouna Rassoul Golden · Démo, non publiée</span>
+<div style="display: flex; flex-wrap: wrap; gap: 20px;"><a href="#" style="color: #D9D1C4;">Mentions légales</a><a href="#" style="color: #D9D1C4;">CGV</a><a href="#" style="color: #D9D1C4;">Confidentialité</a></div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"gold":{"editor":"color","default":"#C9A24A","options":["#C9A24A","#B8893A","#D8B76A","#E0C27A"]},"$preview":{"width":1440,"height":2300}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { variant: "aloe", qty: 1 };
+  }
+  renderVals() {
+    const options = [
+      { id: "aloe", label: "Aloe Vera", img: "./assets/b0119dc762c16dbe189081f5c385cea1.jpg" },
+      { id: "q10", label: "Q10", img: "./assets/6957d777a6fceaf41a664160f0a2c6bc.jpg" },
+      { id: "camomille", label: "Camomille, mains et ongles", img: "./assets/c92159bd07d1125771268279cb03e8b2.jpg" },
+      { id: "glamorous", label: "Glamorous Moment", img: "./assets/99140b49f37e2bc9e4591626fc22c973.jpg" },
+      { id: "rapide", label: "Pénétration rapide", img: "./assets/a0c3f67e0b7c33fe282fbd3bb361bd79.jpg" },
+      { id: "huile", label: "Crème-huile", img: "./assets/0cd2c22c75789c94f36c0238589864a3.jpg" },
+      { id: "uree", label: "Urée", img: "./assets/a7fea9ce44fc5809f01304c9433b4200.jpg" }
+    ];
+    const current = options.find((o) => o.id === this.state.variant) || options[0];
+    const qty = this.state.qty;
+    return {
+      gold: this.props.gold ?? "#C9A24A",
+      qty: qty,
+      current: current,
+      shown: [{ img: current.img, alt: "Tube de crème pour les mains Balea, version " + current.label }],
+      message: "« Bonjour Oumouna, je souhaite commander " + qty + " × Crème pour les mains Balea, version " + current.label + ". »",
+      minus: () => this.setState({ qty: Math.max(1, this.state.qty - 1) }),
+      plus: () => this.setState({ qty: this.state.qty + 1 }),
+      variants: options.map((o) => {
+        const isOn = o.id === this.state.variant;
+        return {
+          label: o.label,
+          img: o.img,
+          pressed: isOn ? "true" : "false",
+          ring: isOn ? "#17130F" : "transparent",
+          chipBorder: isOn ? "#17130F" : "#CFC6B8",
+          chipBg: isOn ? "#17130F" : "#FFFFFF",
+          chipText: isOn ? "#FBF8F3" : "#17130F",
+          pick: () => this.setState({ variant: o.id })
+        };
+      }),
+      related: [
+        { brand: "Balea", name: "Crème corps karité et huile d’argan", img: "./assets/ea3c8d5b70021fd43ec3d4925b5f3a6a.jpg", alt: "Pot de crème corps Balea karité et argan" },
+        { brand: "Balea", name: "Déodorant crème Sensitive", img: "./assets/a0cef117c4a0eb55a35dcbfad1f42c3d.jpg", alt: "Pot de déodorant crème Balea Sensitive" },
+        { brand: "Balea", name: "Huile démaquillante à l’argan", img: "./assets/4bf9e3d58e9e682c2c9b35e5b5c9338b.jpg", alt: "Flacon d’huile démaquillante Balea" },
+        { brand: "Mixa", name: "Baume réparateur Cica Repair+ 10-en-1", img: "./assets/2d32988fec2da95efe418a634d113df4.jpg", alt: "Pot de baume Mixa Cica Repair+" }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
